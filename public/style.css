@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     color:white;
     font-size: 30px;
-    margin-left: 100px;
+    margin-left: 65px;
     margin-bottom: 20px;
 }
 .root{
@@ -182,4 +182,23 @@
 .letra{
     margin-top: 5px;
     margin-bottom: 5px;
+}
+@media (min-width: 935px) {
+    .barra{
+        height: 90px;
+        width: 1280px;
+        background-color: white;
+        position:fixed;
+        bottom: 0px;
+        left: 0px;
+    
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    
+    
+
 }
