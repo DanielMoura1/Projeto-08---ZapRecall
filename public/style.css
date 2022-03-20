@@ -1,0 +1,185 @@
+.esconderTela{
+    display: none;
+}
+.logoPequeno{
+    display:flex;
+    flex-wrap: wrap;
+    color:white;
+    font-size: 30px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+.root{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(251, 107, 107);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.zap{
+    font-size: 50px;
+    color: white
+}
+.button{
+    margin-top: 60px;
+    color:brown;
+    margin-left: 60px;
+}
+.logo{
+    margin-left: 80px;
+}
+
+.caixa{
+    width:300px;
+    height: 50px;
+    background-color:white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    
+}
+.caixa2{
+    width:300px;
+    height: 120px;
+    background-color:yellow;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+}
+.seta{
+    display:flex;
+  
+    
+}
+.setinha{
+    margin-left: 270px;
+    margin-top: 80px;
+}
+.textoCaixa{
+    margin-right: 190px;
+    margin-left: 10px;
+    margin-top: 17px;
+    
+}
+.imgg{
+    margin-top: 17px;
+}
+.caixa3{
+    width:300px;
+    height: 120px;
+    background-color:yellow;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+}
+.opcao{
+    margin-top: 10px;
+    display: flex;
+}
+.caixaVer{
+    width:300px;
+    height: 50px;
+    background-color:white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    color:red;
+    text-decoration: line-through;
+    
+   
+}
+.caixaAma{
+    width:300px;
+    height: 50px;
+    background-color:white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    color:yellow;
+    text-decoration: line-through;
+}
+.caixaVerd{
+    width:300px;
+    height: 50px;
+    background-color:white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    color:green;
+    text-decoration: line-through;
+}
+.vermelho{
+    border-radius: 6px;
+    width: 80px;
+    height: 50px;
+    background-color: red;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.amarelo{
+    border-radius: 6px;
+    width: 90px;
+    height: 50px;
+    background-color: orange;
+    margin-right: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.verde{
+    border-radius: 6px;
+    width: 90px;
+    height: 50px;
+    background-color: green;
+    margin-right: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.barra{
+    height: 90px;
+    width:360px;
+    background-color: white;
+    position:fixed;
+    bottom: 0px;
+    right: 0px;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.barra2{
+    height: 90px;
+    width:360px;
+    background-color: white;
+    position:fixed;
+    bottom: 0px;
+    right: 0px;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.fim{
+    display: flex;
+}
+.mb{
+    margin-right: 10px;
+}
+.letra{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
