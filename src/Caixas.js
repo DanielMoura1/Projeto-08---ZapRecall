@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import Tela2 from "./Tela2";
+
 export default function Caixas(props)  {
     const [ok,setOk] =  useState([0])
     const [cas, setCas] = useState(['caixa','caixa2 esconderTela'])
     const [cla,setCla] = useState(['caixa3 esconderTela'])
    
-    const {fig,abrir,puts} =props
+    const {fig,abrir} =props
     const [immg,setImmg] =useState(['imgg'])
     function immgg(){
         immg[0] ='imgg esconderTela'
@@ -13,7 +13,7 @@ export default function Caixas(props)  {
         
     }
     function Caixa(){
-        if(ok[0] ==0){
+        if(ok[0] ===0){
 
             ok[0] = 1
             cas[0]= 'caixa esconderTela'
@@ -56,11 +56,12 @@ export default function Caixas(props)  {
     }
     
     return(
-        <>
-            <div onClick={( )=> {
+        < >
+       
+            <div key={cas.b} onClick={(b)=> {
                         Caixa()
                          }} className={cas[0]}>
-                <div className='seta'>
+                <div key={immg.b} className='seta'>
                     <h1  className='textoCaixa' >{props.pergunta}</h1>
                     <img  className={immg[0]}  src='Vector.png'/>
                     <img className={`imgg ${fig[0]}`} src ={props.figura}/>

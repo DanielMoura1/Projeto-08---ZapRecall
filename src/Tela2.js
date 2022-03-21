@@ -44,7 +44,7 @@ export default function Tela2(){
         setFigura([...figura])
         console.log(puts)
         if (valor  === numero -1){
-            if(puts >0 || imagem == 'xxx.png'){
+            if(puts >0 || imagem === 'xxx.png'){
                 sumir[0] = 'esconderTela'
                 setSumir([...sumir])
                 aparecer2[0]='barra2'
@@ -75,7 +75,13 @@ export default function Tela2(){
             
              {carta.map((cartas) => {
                  i =i+1
-             return (<Caixas i={i-1}  puts={puts} nao={nao} pergunta ={`pergunta ${i}`} abrir={abrir} fig={fig[i-1]} texto={cartas.baralho} reposta={cartas.reposta}  soma={callback}  imagem ={Figura} figura={figura[i-1]}/>
+                
+                 
+             return (
+                 <>
+            
+                 <Caixas i={i-1} key={cartas.i} cartas={cartas} puts={puts} nao={nao} pergunta ={`pergunta ${i}`} abrir={abrir} fig={fig[i-1]} texto={cartas.baralho} reposta={cartas.reposta}  soma={callback}  imagem ={Figura} figura={figura[i-1]}/>
+                 </>
              )
         })}
          
@@ -93,7 +99,7 @@ export default function Tela2(){
                 <img className={fig[7]} src ={figura[7]} />
                 </div>
             </div>
-            <div className={aparecer[0]}>
+            <div key={fig.i}  className={aparecer[0]}>
                 <div className='fim'><img className="mb" src='parabens.png'/> <h2>PARABÉNS!</h2></div>
                 <p className="letra"> Você não esqueceu de nenhum flashcard!</p>
                 <div>
