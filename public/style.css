@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css2? family= Encode+Sans:wght@100;200;300;400;500;600;700 & display=swap");
+h1{
+    font-family: "Encode Sans", sans-serif;
+}
+p{
+    font-family: "Encode Sans", sans-serif;
+}
+h2{
+    font-family: "Encode Sans", sans-serif;
+}
 .esconderTela{
     display: none;
 }
@@ -160,7 +170,7 @@
     
 }
 .barra2{
-    height: 90px;
+    height: 240px;
     width:360px;
     background-color: white;
     position:fixed;

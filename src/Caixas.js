@@ -33,6 +33,7 @@ export default function Caixas(props)  {
         cas[0]='caixaVer'
         setCas([...cas])
         setCla([...cla])
+        
         props.nao()
         return (props.imagem('xxx.png',props.i) )
     }

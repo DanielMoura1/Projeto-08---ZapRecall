@@ -4,7 +4,8 @@ import Caixas from "./Caixas";
 export default function Tela2(){
     function comparador() { 
         return Math.random() - 0.5; 
-    } 
+    }
+    
     const [puts,setPuts]  =useState(0)
     const numero = 8
     const [sumir,setSumir] =useState(['barra'])
@@ -24,19 +25,19 @@ export default function Tela2(){
     }
     let i=0
     function abc(){
-        console.log(puts)
         
+        console.log(puts)
         if (valor  === numero -1){
             if(puts >0){
                 sumir[0] = 'esconderTela'
                 setSumir([...sumir])
-                aparecer2[0]='barra'
+                aparecer2[0]='barra2'
                 setAparecer2([... aparecer2])
             }else{
            
             sumir[0] = 'esconderTela'
             setSumir([...sumir])
-            aparecer[0]='barra'
+            aparecer[0]='barra2'
             setAparecer([... aparecer])
             }
         }   
@@ -49,7 +50,8 @@ export default function Tela2(){
     function callback(){
         console.log('oi '+puts)
         setValor(valor + 1)
-        abc()   
+        
+       
        
     }
     const [figura,setFigura] =useState(['','','','']);
@@ -58,6 +60,24 @@ export default function Tela2(){
         
         figura[i] = imagem
         setFigura([...figura])
+        console.log(puts)
+        if (valor  === numero -1){
+            if(puts >0 || imagem == 'xxx.png'){
+                sumir[0] = 'esconderTela'
+                setSumir([...sumir])
+                aparecer2[0]='barra2'
+                setAparecer2([... aparecer2])
+            }else{
+           
+            sumir[0] = 'esconderTela'
+            setSumir([...sumir])
+            aparecer[0]='barra2'
+            setAparecer([... aparecer])
+            }
+        }     
+
+        
+        
         
 
     }
@@ -73,7 +93,7 @@ export default function Tela2(){
             
              {carta.map((cartas) => {
                  i =i+1
-             return (<Caixas i={i-1} puts={puts} nao={nao} pergunta ={`pergunta ${i}`} abrir={abrir} fig={fig[i-1]} texto={cartas.baralho} reposta={cartas.reposta}  soma={callback}  imagem ={Figura} figura={figura[i-1]}/>
+             return (<Caixas i={i-1}  puts={puts} nao={nao} pergunta ={`pergunta ${i}`} abrir={abrir} fig={fig[i-1]} texto={cartas.baralho} reposta={cartas.reposta}  soma={callback}  imagem ={Figura} figura={figura[i-1]}/>
              )
         })}
          
