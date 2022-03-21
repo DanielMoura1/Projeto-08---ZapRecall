@@ -171,11 +171,11 @@ h2{
 }
 .barra2{
     height: 240px;
-    width:360px;
+    width:412px;
     background-color: white;
     position:fixed;
     bottom: 0px;
-    right: 0px;
+    left: 0px;
 
     display:flex;
     justify-content: center;
