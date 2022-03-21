@@ -24,25 +24,7 @@ export default function Tela2(){
 
     }
     let i=0
-    function abc(){
-        
-        console.log(puts)
-        if (valor  === numero -1){
-            if(puts >0){
-                sumir[0] = 'esconderTela'
-                setSumir([...sumir])
-                aparecer2[0]='barra2'
-                setAparecer2([... aparecer2])
-            }else{
-           
-            sumir[0] = 'esconderTela'
-            setSumir([...sumir])
-            aparecer[0]='barra2'
-            setAparecer([... aparecer])
-            }
-        }   
-
-    }
+    
     function nao(){
         setPuts(puts+1)
     }
